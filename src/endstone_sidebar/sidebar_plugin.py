@@ -77,17 +77,17 @@ class SidebarPlugin(Plugin):
 
     def register_default_placeholders(self):
         def x(p: Player) -> str:
-            return p.location.x.__str__()
+            return f"{p.location.x:.0f}"
 
         self.register_placeholder("x", x)
 
         def y(p: Player) -> str:
-            return p.location.y.__str__()
+            return f"{p.location.y:.0f}"
 
         self.register_placeholder("y", y)
 
         def z(p: Player) -> str:
-            return p.location.z.__str__()
+            return f"{p.location.z:.0f}"
 
         self.register_placeholder("z", z)
 
@@ -102,12 +102,12 @@ class SidebarPlugin(Plugin):
         self.register_placeholder("dimension", dimension)
 
         def dimension_id(p: Player) -> str:
-            return p.location.dimension.type.value.__str__()
+            return str(p.location.dimension.type.value)
 
         self.register_placeholder("dimension_id", dimension_id)
 
         def ping(p: Player) -> str:
-            return p.ping.__str__()
+            return str(p.ping)
 
         self.register_placeholder("ping", ping)
 
@@ -117,12 +117,12 @@ class SidebarPlugin(Plugin):
         self.register_placeholder("mc_version", mc_version)
 
         def online(p) -> str:
-            return len(self.server.online_players).__str__()
+            return str(len(self.server.online_players))
 
         self.register_placeholder("online", online)
 
         def max_online(p) -> str:
-            return self.server.max_players.__str__()
+            return str(self.server.max_players)
 
         self.register_placeholder("max_online", max_online)
 
