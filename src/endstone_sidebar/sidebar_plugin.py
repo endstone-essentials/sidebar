@@ -59,7 +59,7 @@ class SidebarPlugin(Plugin):
             objective.get_score(line).value = counter
             counter += 1
 
-        objective.display_slot = DisplaySlot.SIDE_BAR
+        objective.set_display(DisplaySlot.SIDE_BAR)
 
     def load_config(self) -> None:
         self.update_period = self.config["update_period"]
