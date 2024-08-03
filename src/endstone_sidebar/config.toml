@@ -1,0 +1,12 @@
+# flush time, unit: gt
+update_period = 20
+
+[sidebar]
+title = "Welcome to Endstone!"
+content = [
+    "Name: §a{player_name}",
+    "Ping: §a{ping}",
+    "Pos: §a{x}, {y}, {z}",
+    "Dimension: §a{dimension}",
+    "Online: §a{online}/{max_online}"
+]
