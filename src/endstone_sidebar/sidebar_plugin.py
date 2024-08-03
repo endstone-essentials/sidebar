@@ -52,7 +52,7 @@ class SidebarPlugin(Plugin):
         if objective is not None:
             objective.unregister()
 
-        objective = player.scoreboard.add_objective(CUSTOM_OBJECTIVE_NAME, Criteria.DUMMY)
+        objective = player.scoreboard.add_objective(CUSTOM_OBJECTIVE_NAME, Criteria.DUMMY, t)
 
         counter = 0
         for line in c:
