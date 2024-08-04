@@ -1,3 +1,5 @@
+import datetime
+import uuid
 from typing import Callable
 
 from endstone.event import PlayerJoinEvent
@@ -125,6 +127,81 @@ class SidebarPlugin(Plugin):
             return str(self.server.max_players)
 
         self.register_placeholder("max_online", max_online)
+
+        def year(p) -> str:
+            return str(datetime.datetime.today().year)
+
+        self.register_placeholder("year", year)
+
+        def month(p) -> str:
+            return str(datetime.datetime.today().month)
+
+        self.register_placeholder("month", month)
+
+        def day(p) -> str:
+            return str(datetime.datetime.today().day)
+
+        self.register_placeholder("day", day)
+
+        def hour(p) -> str:
+            return str(datetime.datetime.today().hour)
+
+        self.register_placeholder("hour", hour)
+
+        def minute(p) -> str:
+            return str(datetime.datetime.today().minute)
+
+        self.register_placeholder("minute", minute)
+
+        def second(p) -> str:
+            return str(datetime.datetime.today().second)
+
+        self.register_placeholder("second", second)
+
+        def address(p: Player) -> str:
+            return str(p.address)
+
+        self.register_placeholder("address", address)
+
+        def runtime_id(p: Player) -> str:
+            return str(p.runtime_id)
+
+        self.register_placeholder("runtime_id", runtime_id)
+
+        def exp_level(p: Player) -> str:
+            return str(p.exp_level)
+
+        self.register_placeholder("exp_level", exp_level)
+
+        def total_exp(p: Player) -> str:
+            return str(p.total_exp)
+
+        self.register_placeholder("total_exp", total_exp)
+
+        def exp_progress(p: Player) -> str:
+            return str(p.exp_progress)
+
+        self.register_placeholder("exp_progress", exp_progress)
+
+        def gamemode(p: Player) -> str:
+            return p.game_mode.name.lower()
+
+        self.register_placeholder("gamemode", gamemode)
+
+        def xuid(p: Player) -> str:
+            return str(p.xuid)
+
+        self.register_placeholder("xuid", xuid)
+
+        def uuid(p: Player) -> str:
+            return str(p.unique_id)
+
+        self.register_placeholder("uuid", uuid)
+
+        def device_os(p: Player) -> str:
+            return p.device_os
+
+        self.register_placeholder("device_os", device_os)
 
     def register_placeholder(self, name: str, provider: Callable[[Player], str]) -> None:
         self.placeholders[name] = provider

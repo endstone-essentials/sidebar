@@ -11,14 +11,24 @@ Custom sidebar plugin for endstone server.
 - [x] `{dimension}` dimension name
 - [x] `{dimension_id}` dimension id
 - [x] `{ping}` player ping
-- [ ] `{year}` year
-- [ ] `{month}` month
-- [ ] `{hour}` hour
-- [ ] `{minute}` minute
-- [ ] `{second}` second
+- [x] `{year}` year
+- [x] `{month}` month
+- [x] `{day}` day
+- [x] `{hour}` hour
+- [x] `{minute}` minute
+- [x] `{second}` second
 - [x] `{mc_version}` minecraft version
 - [x] `{online}` online player count
 - [x] `{max_online}` max online player count
+- [x] `{address}` player's address
+- [x] `{runtime_id}` player's unique id
+- [x] `{exp_level}` player's experience level
+- [x] `{total_exp}` player's experience in total
+- [x] `{exp_progress}` player's experience progress
+- [x] `{gamemode}` player's game mode
+- [x] `{xuid}` player's xuid
+- [x] `{uuid}` player's uuid
+- [x] `{device_os}` os name of player's current device
 
 ## Install
 

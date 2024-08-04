@@ -8,5 +8,6 @@ content = [
     "Ping: §a{ping}",
     "Pos: §a{x}, {y}, {z}",
     "Dimension: §a{dimension}",
-    "Online: §a{online}/{max_online}"
+    "Online: §a{online}/{max_online}",
+    "Time: §a{year}/{month}/{day}/{hour}"
 ]
