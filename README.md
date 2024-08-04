@@ -5,8 +5,8 @@ Custom sidebar plugin for endstone server.
 ## Supported Variables
 
 - [x] `{x}` x coordinate
-- [x] `{y}` x coordinate
-- [x] `{z}` x coordinate
+- [x] `{y}` y coordinate
+- [x] `{z}` z coordinate
 - [x] `{player_name}` player's name
 - [x] `{dimension}` dimension name
 - [x] `{dimension_id}` dimension id
@@ -21,7 +21,7 @@ Custom sidebar plugin for endstone server.
 - [x] `{online}` online player count
 - [x] `{max_online}` max online player count
 - [x] `{address}` player's address
-- [x] `{runtime_id}` player's unique id
+- [x] `{runtime_id}` player's runtime id
 - [x] `{exp_level}` player's experience level
 - [x] `{total_exp}` player's experience in total
 - [x] `{exp_progress}` player's experience progress
