@@ -203,5 +203,10 @@ class SidebarPlugin(Plugin):
 
         self.register_placeholder("device_os", device_os)
 
+        def locale(p: Player) -> str:
+            return p.locale
+
+        self.register_placeholder("locale", locale)
+
     def register_placeholder(self, name: str, provider: Callable[[Player], str]) -> None:
         self.placeholders[name] = provider

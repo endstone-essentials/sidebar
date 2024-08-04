@@ -29,6 +29,7 @@ Custom sidebar plugin for endstone server.
 - [x] `{xuid}` player's xuid
 - [x] `{uuid}` player's uuid
 - [x] `{device_os}` os name of player's current device
+- [x] `{locale}` player's locale
 
 ## Install
 
