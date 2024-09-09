@@ -33,7 +33,7 @@ class SidebarPlugin(Plugin):
 
     @event_handler
     def on_player_join(self, event: PlayerJoinEvent) -> None:
-        event.player.scoreboard = self.server.get_new_scoreboard()
+        event.player.scoreboard = self.server.create_scoreboard()
 
     def update_sidebar(self) -> None:
         for player in self.server.online_players:
