@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "endstone-sidebar"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = []
 authors = [
     { name = "daoge_cmd", email = "3523206925@qq.com" }
