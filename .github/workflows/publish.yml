@@ -12,7 +12,6 @@ permissions:
 
 jobs:
   publish:
-    if: github.repository == 'EndstoneMC/python-plugin-template'
     runs-on: ubuntu-latest
     environment: pypi
     permissions:

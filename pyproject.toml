@@ -4,10 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "endstone-sidebar"
-version = "0.0.2"
+version = "0.1.0"
 dependencies = []
 authors = [
-    { name = "daoge_cmd", email = "3523206925@qq.com" }
+    { name = "daoge_cmd", email = "3523206925@qq.com" },
+    { name = "Vincent", email = "magicdroidx@gmail.com" }
 ]
 description = "Custom sidebar plugin for endstone"
 readme = "README.md"
