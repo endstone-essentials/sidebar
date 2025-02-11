@@ -11,6 +11,9 @@ Custom sidebar plugin for endstone server.
 - [x] `{dimension}` dimension name
 - [x] `{dimension_id}` dimension id
 - [x] `{ping}` player ping
+- [x] `{date}` date
+- [x] `{time}` time
+- [x] `{datetime}` date and time
 - [x] `{year}` year
 - [x] `{month}` month
 - [x] `{day}` day
@@ -25,7 +28,7 @@ Custom sidebar plugin for endstone server.
 - [x] `{exp_level}` player's experience level
 - [x] `{total_exp}` player's experience in total
 - [x] `{exp_progress}` player's experience progress
-- [x] `{gamemode}` player's game mode
+- [x] `{game_mode}` player's game mode
 - [x] `{xuid}` player's xuid
 - [x] `{uuid}` player's uuid
 - [x] `{device_os}` os name of player's current device

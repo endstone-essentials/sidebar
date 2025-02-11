@@ -11,6 +11,9 @@ Endstone平台的自定义侧栏插件
 - [x] `{dimension}` 维度名称
 - [x] `{dimension_id}` 维度ID
 - [x] `{ping}` 玩家延迟
+- [x] `{date}` 日期
+- [x] `{time}` 时间
+- [x] `{datetime}` 日期和时间
 - [x] `{year}` 年份
 - [x] `{month}` 月份
 - [x] `{day}` 天
@@ -25,7 +28,7 @@ Endstone平台的自定义侧栏插件
 - [x] `{exp_level}` 玩家经验等级
 - [x] `{total_exp}` 玩家总经验
 - [x] `{exp_progress}` 玩家经验进度
-- [x] `{gamemode}` 玩家游戏模式
+- [x] `{game_mode}` 玩家游戏模式
 - [x] `{xuid}` 玩家xuid
 - [x] `{uuid}` 玩家uuid
 - [x] `{device_os}` 玩家当前设备操作系统名称

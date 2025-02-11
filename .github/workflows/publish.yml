@@ -22,7 +22,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build sdist
-        run: pipx run build --sdist
+        run: pipx run build
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.whl
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
